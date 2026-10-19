@@ -1,0 +1,160 @@
+:root {
+  font-family: "Segeo UI", Arial, sans-serif;
+  color-scheme: dark;
+  background: #0B1120;
+  color: #F8FAFC;
+}
+
+  * {
+  box-sizing: border-box;
+}
+
+html,
+body,
+#root {
+  min-height: 100%;
+  margin: 0;
+}
+body {
+  min-height : 100vh;
+  font-family: "Segoe UI", Arial, sans-serif;
+  background-color: #0B1120;
+  color: #F8FAFC;
+}
+
+#root {
+  min-height: 100vh;
+}
+
+a{
+  text-decoration: none;
+  transition: color 0.2s ease;
+}
+
+/* Navbar */
+.navbar{
+  box-shadow:0 4px 20px rgba(0,0,0,0.2);
+}
+
+.navbar-brand {
+  font-size:1.5rem;
+  letter-spacing:0.5px;
+}
+
+.nav-link {
+  margin-left:4px;
+  transition: color 0.2s ease, background-color 0.2s ease;
+}
+
+.nav-link:hover {
+  color: #22D3EE !important;
+}
+/*Typography*/
+h1,
+h2,
+h3,
+h4,
+h5,
+h6 {
+  color: #F8FAFC;
+}
+p {
+  line-height: 1.7;
+}
+.text-muted {
+  color: #94A3B8 !important;
+}
+
+/*Cards */
+.card {
+  background-color: #151f32;
+  color: #F8FAFC;
+  border: 1px solid #263449;
+  border-radius:14px;
+  transition: transform 0.2s ease, border-color 0.2s ease,
+  box-shadow 0.2s ease;
+}
+
+.card:hover {
+  transform: translateY(-3px);
+  border-color: #365168;
+  box-shadow: 0 10px 25px rgba(0, 0,0,0.15);
+}
+
+/* Buttons */
+.btn{
+  border-radius: 8px;
+  transition: all 0.2s ease;
+}
+.btn-info {
+  --bs-btn-bg: #06B6D4;
+    --bs-btn-border-color: #06B6D4;
+    --bs-btn-color: #07111F;
+    --bs-btn-hover-bg: #22D3EE;
+    --bs-btn-hover-border-color: #22D3EE;
+    --bs-btn-hover-color: #07111F;
+}
+
+/* Forms */
+.form-control,
+.form-select {
+  background-color: #111B2D;
+  color: #F8FAFC;
+  border: 1px solid #334155;
+  border-radius:8px;
+  padding:10px 12px;
+}
+
+.form-control:focus,
+.form-select:focus {
+background-color: #111B2D;
+color: #F8FAFC;
+border-color: #06B6D4;
+box-shadow:0 0 0 0.2rem rgba(6,182,212,0.15);
+}
+
+.form-control::placeholder {
+  color: #94A3B8;
+}
+
+.form-control:disbaled,
+.form-select:disabled {
+  background-color: #1E2938;
+  color: #94A3B8;
+}
+
+/*Tables*/
+.table {
+  --bs-table-bg: #151F32;
+    --bs-table-color: #F8FAFC;
+    --bs-table-border-color: #334155;
+}
+
+/*Dropdowns*/
+.dropdown-menu {
+background-color:#151f32;
+border-color: #334155;
+}
+.dropdown-item {
+  color : #F8FAFC;
+}
+.dropdown-item:hover {
+  background-color: #263449;
+  color: #22D3EE;
+}
+
+/* Hero */
+.display-4{
+  line-height:1.2;
+}
+
+/* Responsive */
+
+@media (max-width: 786px) {
+  .display-4{
+    font-size:2.3rem;
+  }
+  .navbar-brand{
+    font-size:1.3rem;
+  }
+}
